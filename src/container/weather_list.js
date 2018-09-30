@@ -7,6 +7,7 @@ class WeatherList extends Component{
 
     render() {
         return (
+            <div>
             <table className="table table-hover">
             <thead>
             <tr>
@@ -22,6 +23,7 @@ class WeatherList extends Component{
 
             </tbody>
             </table>
+            </div>
         )
     }
 
@@ -40,16 +42,17 @@ class WeatherList extends Component{
             <td> <GoogleMap lon = {lon} lat={lat}/>
                 {name}</td>
             <td>
-                <Chart data = {temps} color = "red" units = "F"/>
+                <Chart data = {temps} color = "red" units = "F is current temperature"/>
             </td>
             <td>
-                <Chart data = {pressure} color = "violet" units = "hPa"/>
+                <Chart data = {pressure} color = "violet" units = "hPa is currrent pressure"/>
             </td>
             <td>
-                <Chart data = {humidity} color = "green" units = "%"/>
+                <Chart data = {humidity} color = "green" units = "% is current humidity"/>
             </td>
 
-        </tr>)
+        </tr>
+        )
 
 
     }
