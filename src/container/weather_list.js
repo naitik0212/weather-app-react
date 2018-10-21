@@ -34,8 +34,6 @@ class WeatherList extends Component{
         const humidity = cityData.list.map( weather => weather.main.humidity);
         const {lon,lat} = cityData.city.coord;
         // const lat = cityData.city.coord.lat;
-
-
         // console.log(temps);
 
         return (<tr key={name}>
@@ -57,6 +55,9 @@ class WeatherList extends Component{
 
     }
 }
+
+
+
 
 function mapStateToProps ({weather}) {
     return {weather};
