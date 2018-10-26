@@ -5,7 +5,7 @@ import WeatherList from "../container/weather_list";
 export default class App extends Component {
   render() {
     return (
-      <div style={{ background: 'linear-gradient(to right bottom, white, snow, #bdc3c7, #d7d2cc, #304352)',textAlign: "center"}}>
+      <div style={{ background: 'linear-gradient(to right bottom, snow, #bdc3c7, #d7d2cc, #304352)',textAlign: "center"}}>
           <br />
         <div >
 
